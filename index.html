@@ -35,11 +35,75 @@
                 return false;
             });
         });
-
     </script>
-</head>
 
+
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+        #btn-close-modal {
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+</head>
+    <!--DEMO01-->
+<div id="animatedModal1">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal1">
+            CLOSE MODAL
+        </div>
+
+        <div class="modal-content">
+            <img src="img/banner5.jpg">
+        </div>
+    </div>
+
+    <!--DEMO02-->
+    <div id="animatedModal2">
+        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+        <div id="btn-close-modal" class="close-animatedModal2">
+            CLOSE MODAL
+        </div>
+
+        <div class="modal-content">
+            <img src="img/banner6.jpg">
+        </div>
+    </div>
+    
+    
+    
+     <!--DEMO03-->
+<div id="animatedModal3">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal3">
+            CLOSE MODAL
+        </div>
+
+        <div class="modal-content">
+            <img src="img/banner7.jpg">
+        </div>
+    </div>
+
+    <!--DEMO04-->
+    <div id="animatedModal4">
+        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+        <div id="btn-close-modal" class="close-animatedModal4">
+            CLOSE MODAL
+        </div>
+
+        <div class="modal-content" style="display: block;">
+            <img src="img/banner8.jpg">
+        </div>
+    </div>
 <body>
+
+    
+
+
     <!--::header part start::-->
     <header class="main_menu">
         <div class="container">
@@ -222,7 +286,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_pricing_part">
-                        <img src="img/banner1.jpg">
+                        <a id="demo01" href="#animatedModal1"><img src="img/banner1.jpg"></a>
 
 
 
@@ -230,24 +294,29 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_pricing_part">
-                        <img src="img/banner2.jpg" alt="">
+                        <a id="demo02" href="#animatedModal2"><img src="img/banner2.jpg" alt=""></a>
 
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_pricing_part">
-                        <img src="img/banner3.jpg" alt="">
+                        <a id="demo03" href="#animatedModal3"><img src="img/banner3.jpg" alt=""></a>
 
 
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_pricing_part">
-                        <img src="img/banner4.jpg" alt="">
+                        <a id="demo04" href="#animatedModal4"><img src="img/banner4.jpg" alt=""></a>
 
 
                     </div>
                 </div>
+
+
+
+
+
             </div>
         </div>
         <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_2 custom-animation2">
@@ -263,9 +332,11 @@
                     <div class="review_img">
                         <img src="img/branding1.jpg" alt="">
                     </div>
-                    <a href="http://skin-skin3.vlf326.cafe24.com/"><div class="btn3">
-                        <h5>자세히보기</h5>
-                    </div></a>
+                    <a href="http://skin-skin3.vlf326.cafe24.com/" target="_blank">
+                        <div class="btn3">
+                            <h5>자세히보기</h5>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <h1>BROG</h1>
@@ -274,10 +345,12 @@
                         <img src="img/branding2.jpg">
 
                     </div>
-                    <a href="https://blog.naver.com/vlf326"><div class="btn3">
-                        <h5>자세히보기</h5>
+                    <a href="https://blog.naver.com/vlf326" target="_blank">
+                        <div class="btn3">
+                            <h5>자세히보기</h5>
 
-                    </div></a>
+                        </div>
+                    </a>
                 </div>
             </div>
             <img src="img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_2 custom-animation2">
@@ -317,7 +390,6 @@
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
-
                             </script> All rights reserved
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </P>
@@ -355,6 +427,22 @@
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-</body>
 
-</html>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animatedModal.js"></script>
+    <script>
+        //demo 01
+        $("#demo01").animatedModal();
+
+        //demo 02
+        $("#demo02").animatedModal();
+        
+        //demo 03
+        $("#demo03").animatedModal();
+
+        //demo 04
+        $("#demo04").animatedModal();
+    </script>
+
+</body></html>
