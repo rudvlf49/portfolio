@@ -3228,6 +3228,8 @@ ul {
 .btn1>h5{text-align: center;line-height: 50px}
 .btn2{width: 200px;height: 50px;border: 1px solid #000000;border-radius: 50px}
 .btn2>h5{text-align: center;line-height: 50px}
+.btn3{width: 200px;height: 50px;border: 1px solid #000000;border-radius: 50px;margin: 0 auto}
+.btn3>h5{text-align: center;line-height: 50px}
 .no-js .owl-carousel, .owl-carousel.owl-loaded{margin-bottom: 25px;}
 /* line 59, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_about_us.scss */
 .about_us .about_us_text p {
